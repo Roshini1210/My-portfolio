@@ -1,12 +1,14 @@
+import '../styles/Hero.css';
+
 import profile from '../assets/profile.jpeg';
 
 function Hero() {
   return (
-    <section className="hero">
+    <section id = "home" className="hero">
       <div className="hero-content">
-        <p className="hero-greeting">Hi, I'm</p>
+        <h2 className="hero-greeting"><strong>Hi, I'm</strong></h2>
 
-        <h1>Roshini</h1>
+        <h1>Roshini </h1>
 
         <h2>Computer Science Engineering Student</h2>
         <h3>MERN Stack Developer</h3>

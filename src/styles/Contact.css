@@ -1,0 +1,97 @@
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+  padding: 100px 0;
+  background: #0b0b0b;
+  color: white;
+}
+
+.contact-content {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-text h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  color: #aaa;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.contact-links {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  background: #181818;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.contact-links a:hover {
+  transform: translateX(5px);
+}
+
+.contact-links span {
+  color: #888;
+}
+
+.contact-links strong {
+  font-size: 0.9rem;
+}
+
+
+/* =========================
+   CONTACT - MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .contact-section {
+    padding: 80px 20px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 40px;
+    align-items: stretch;
+  }
+
+  .contact-text {
+    text-align: center;
+  }
+
+  .contact-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .contact-links {
+    width: 100%;
+  }
+
+  .contact-links a {
+    padding: 18px 20px;
+  }
+
+}

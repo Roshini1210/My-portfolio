@@ -1,0 +1,106 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  padding: 18px 0;
+  background: transparent;
+}
+
+
+/* =========================
+   NAVBAR BRAND
+========================= */
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white !important;
+
+  padding: 8px 14px;
+
+  border: 1px solid #333;
+  border-radius: 8px;
+
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  border-color: #777;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   NAVBAR LINKS CONTAINER
+========================= */
+
+.navbar-collapse {
+  flex-grow: 0;
+
+  padding: 8px 12px;
+
+  background: rgba(20, 20, 20, 0.92);
+
+  border: 1px solid #292929;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   NAVBAR LINKS
+========================= */
+
+.navbar-nav {
+  gap: 8px;
+}
+
+.navbar .nav-link {
+  color: #aaa !important;
+
+  padding: 8px 14px !important;
+
+  border-radius: 7px;
+
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: white !important;
+  background: #252525;
+}
+
+
+/* =========================
+   ACTIVE-LIKE HOVER EFFECT
+========================= */
+
+.navbar .nav-link:focus {
+  color: white !important;
+  background: #252525;
+}
+
+
+/* =========================
+   MOBILE NAVBAR
+========================= */
+
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    margin-top: 12px;
+    padding: 12px;
+  }
+
+  .navbar-nav {
+    gap: 3px;
+  }
+
+  .navbar .nav-link {
+    padding: 10px 12px !important;
+  }
+
+}

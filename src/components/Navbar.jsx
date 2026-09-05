@@ -1,14 +1,14 @@
 import '../styles/Navbar.css';
+import logo from '../assets/logo.jpg'
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container">
 
-        <a className="navbar-brand btn btn-primary" href="#home">
-          Roshini
+        <a className="navbar-brand" href="#home">
+          <img src={logo} alt="ROSHINI" />
         </a>
-
         <button
           className="navbar-toggler"
           type="button"

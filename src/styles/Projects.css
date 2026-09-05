@@ -1,47 +1,146 @@
 /* =========================
-   SKILLS SECTION
+   PROJECTS SECTION
 ========================= */
 
-.skills-section {
+.projects-section {
   padding: 100px 0;
-  background: #0b0b0b;
+  background: #111111;
   color: white;
 }
 
-.skills-grid {
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.projects-section .section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.projects-section .section-heading p {
+  color: #888;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.projects-section .section-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
 }
 
-.skill-card {
-  padding: 30px;
-  background: #151515;
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+  background: #181818;
   border: 1px solid #292929;
-  border-radius: 12px;
+  border-radius: 14px;
+  padding: 30px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.skill-card h3 {
-  margin-bottom: 25px;
-  font-size: 1.3rem;
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #555;
 }
 
-.skill-list {
+
+/* =========================
+   PROJECT CONTENT
+========================= */
+
+.project-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-number {
+  color: #777;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #aaa;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   TECHNOLOGIES
+========================= */
+
+.project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
+  margin: 25px 0;
 }
 
-.skill-list span {
-  padding: 8px 15px;
+.project-tech span {
+  padding: 6px 12px;
   background: #222;
   border: 1px solid #333;
   border-radius: 20px;
-  color: #ccc;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
+  color: #bbb;
+  font-size: 0.8rem;
 }
 
-.skill-list span:hover {
-  transform: translateY(-3px);
+
+/* =========================
+   PROJECT LINK
+========================= */
+
+.project-link {
+  margin-top: auto;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .projects-section {
+    padding: 80px 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-section .section-heading h2 {
+    font-size: 2rem;
+  }
+
 }

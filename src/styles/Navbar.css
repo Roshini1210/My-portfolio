@@ -13,23 +13,20 @@
 ========================= */
 
 .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: white !important;
-
-  padding: 8px 14px;
-
-  border: 1px solid #333;
-  border-radius: 8px;
-
-  transition: all 0.3s ease;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
 }
 
-.navbar-brand:hover {
-  border-color: #777;
-  transform: translateY(-2px);
+.navbar-brand img {
+  width: 180px;
+  height: auto;
+  display: block;
 }
+
 
 
 /* =========================
@@ -38,32 +35,24 @@
 
 .navbar-collapse {
   flex-grow: 0;
-
-  padding: 8px 12px;
-
-  background: rgba(20, 20, 20, 0.92);
-
-  border: 1px solid #292929;
-  border-radius: 12px;
-
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
 }
-
 
 /* =========================
    NAVBAR LINKS
 ========================= */
 
 .navbar-nav {
-  gap: 8px;
+  gap: 10px;
 }
 
 .navbar .nav-link {
   color: #aaa !important;
+  padding: 8px 16px !important;
 
-  padding: 8px 14px !important;
-
+  border: 1px solid #333;
   border-radius: 7px;
+
+  background: rgba(20, 20, 20, 0.8);
 
   transition: all 0.3s ease;
 }
@@ -71,9 +60,15 @@
 .navbar .nav-link:hover {
   color: white !important;
   background: #252525;
+  border-color: #777;
+  transform: translateY(-2px);
 }
 
-
+.navbar .nav-link:focus {
+  color: white !important;
+  background: #252525;
+  border-color: #777;
+}
 /* =========================
    ACTIVE-LIKE HOVER EFFECT
 ========================= */
@@ -87,20 +82,17 @@
 /* =========================
    MOBILE NAVBAR
 ========================= */
-
 @media (max-width: 991px) {
 
   .navbar-collapse {
     margin-top: 12px;
-    padding: 12px;
   }
 
   .navbar-nav {
-    gap: 3px;
+    gap: 6px;
   }
 
   .navbar .nav-link {
     padding: 10px 12px !important;
   }
-
 }

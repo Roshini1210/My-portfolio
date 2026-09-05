@@ -4,7 +4,7 @@ import profile from '../assets/profile.jpeg';
 
 function Hero() {
   return (
-    <section id = "home" className="hero">
+    <section id="home" className="hero">
       <div className="hero-content">
         <h2 className="hero-greeting"><strong>Hi, I'm</strong></h2>
 
@@ -29,13 +29,13 @@ function Hero() {
         </div>
 
         <div className="hero-buttons">
-          <button className="btn btn-primary">
+          <a href="#projects" className="btn btn-primary">
             View My Projects
-          </button>
+          </a>
 
-          <button className="btn btn-outline-light">
+          <a href="#contact" className="btn btn-outline-light">
             Contact Me
-          </button>
+          </a>
         </div>
       </div>
 

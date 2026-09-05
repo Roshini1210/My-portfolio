@@ -180,3 +180,13 @@
     object-fit: cover;
   }
 }
+
+@media (max-width: 768px) {
+  .hero-content {
+    order: 2;
+  }
+
+  .hero-image {
+    order: 1;
+  }
+}

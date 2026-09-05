@@ -75,3 +75,63 @@
   color: #888;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-highlights {
+    order: 1;
+    grid-template-columns: 1fr;
+  }
+
+  .about-text {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Stack the two main About parts vertically */
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Show the boxes BEFORE the About Me text */
+  .about-highlights {
+    order: 1;
+
+    width: 100%;
+    min-width: 0;
+
+    /* 2 columns on mobile */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+  }
+
+  /* About text comes after the boxes */
+  .about-text {
+    order: 2;
+    width: 100%;
+    min-width: 0;
+    margin-top: 30px;
+  }
+
+  /* Make every box fit inside its grid column */
+  .highlight-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+}
